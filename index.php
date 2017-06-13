@@ -18,14 +18,17 @@
         </div>
     </div>
     <?php
-        $newDynamoDbLink = "#";
+        $noLink = "#";
+        $newDynamoDbLink = "createNewDynamoDb.php";
         $isDynamoDb = False;
         $dynamoDbLable = "";
         if($isDynamoDb)
         {
             $dynamoDbLable = "Database Exists! Name: myDynamoDb";
-            $newDynamoDbLink = '#';
+            $newDynamoDbLink = "#";
         }
+
+        $addDataLink = "addDataToDynamoDb.php"
     ?>
     <div id="container">
         <div class="panel panel-default">
@@ -34,10 +37,10 @@
             </div>
             <div class="panel-body">
                 <div class="list-group">
-                    <a href="#" class="list-group-item">Create New Dynamo DB Database<span class="link-lable"><?php echo $dynamoDbLable ?></span></a>
-                    <a href="#" class="list-group-item">Morbi leo risus<span class="link-lable"></span></a>
-                    <a href="#" class="list-group-item">Porta ac consectetur ac<span class="link-lable"></span></a>
-                    <a href="#" class="list-group-item">Vestibulum at eros<span class="link-lable"></span></a>
+                    <a href="<?php echo $newDynamoDbLink ?>" class="list-group-item">Create New Dynamo DB Database and Tables<span class="link-lable"><?php echo $dynamoDbLable ?></span></a>
+                    <a href="<?php echo $addDataLink ?>" class="list-group-item">Insert records to Dynamo DB Tables<span class="link-lable"></span></a>
+                    <a href="<?php echo $noLink ?>" class="list-group-item">Porta ac consectetur ac<span class="link-lable"></span></a>
+                    <a href="<?php echo $noLink ?>" class="list-group-item">Vestibulum at eros<span class="link-lable"></span></a>
                 </div>
             </div>
         </div>
