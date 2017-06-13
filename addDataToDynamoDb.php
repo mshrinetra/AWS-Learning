@@ -179,7 +179,7 @@
                         ),
                     ));
 
-                    echo "<li class=\"list-group-item\"><span class=\"link-lable\">done." . PHP_EOL . "</span><li>";
+                    echo "<li class=\"list-group-item\"><span class=\"link-lable\">done." . PHP_EOL . "</span></li>";
 
 
 
@@ -213,7 +213,7 @@
                         )
                     ));
 
-                    echo "<li class=\"list-group-item\"><span class=\"link-lable\">done." . PHP_EOL . "</span><li>";
+                    echo "<li class=\"list-group-item\"><span class=\"link-lable\">done." . PHP_EOL . "</span></li>";
 
 
                     $tableName = 'Reply';
@@ -266,7 +266,7 @@
                         )
                     ));
 
-                    echo "<li class=\"list-group-item\"><span class=\"link-lable\">done." . PHP_EOL . "</span><li>";
+                    echo "<li class=\"list-group-item\"><span class=\"link-lable\">done." . PHP_EOL . "</span></li>";
 
                 ?>
                 </ul>
