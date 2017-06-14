@@ -65,8 +65,8 @@
                                 )
                             ),
                             'ProvisionedThroughput' => array(
-                                'ReadCapacityUnits'    => 10,
-                                'WriteCapacityUnits' => 5
+                                'ReadCapacityUnits'    => 5,
+                                'WriteCapacityUnits' => 2
                             )
                         ));
                         $tableNames[] = $tableName;
@@ -89,8 +89,8 @@
                                 )
                             ),
                             'ProvisionedThroughput' => array(
-                                'ReadCapacityUnits'    => 10,
-                                'WriteCapacityUnits' => 5
+                                'ReadCapacityUnits'    => 5,
+                                'WriteCapacityUnits' => 2
                             )
                         ));
                         $tableNames[] = $tableName;
@@ -121,8 +121,8 @@
                                 )
                             ),
                             'ProvisionedThroughput' => array(
-                                'ReadCapacityUnits'    => 10,
-                                'WriteCapacityUnits' => 5
+                                'ReadCapacityUnits'    => 5,
+                                'WriteCapacityUnits' => 2
                             )
                         ));
                         $tableNames[] = $tableName;
@@ -175,8 +175,8 @@
                                 )
                             ),
                             'ProvisionedThroughput' => array(
-                                'ReadCapacityUnits'    => 10,
-                                'WriteCapacityUnits' => 5
+                                'ReadCapacityUnits'    => 5,
+                                'WriteCapacityUnits' => 2
                             )
                         ));
                         $tableNames[] = $tableName;
@@ -184,7 +184,7 @@
                         foreach($tableNames as $tableName) {
                             echo "<li class=\"list-group-item\">Waiting for table $tableName to be created." . PHP_EOL . "</li>";
                             $client->waitUntil('TableExists', array('TableName' => $tableName)); // Changed from v2
-                            echo "<li class=\"list-group-item\">Table $tableName has been created." . PHP_EOL . "</li>";
+                            echo "<li class=\"list-group-item\"><span class=\"link-lable\">Table $tableName has been created." . PHP_EOL . "</span></li>";
                         }
                     ?>
                     </ul>
