@@ -1,17 +1,20 @@
-.page-header {
+.page-header{
     display: flex;
     margin: 0 0 20px;
     padding: 1%;
     background-color: whitesmoke;
     border-bottom: 1px solid #ccc;
 }
-.page-header-left {
+.page-header-left{
     flex: 0 0 75%;
 }
-.page-header-right {
+.page-header-right{
     flex: 1;
     text-align: right;
     margin-top: 40px;
+}
+.about-Link{
+    margin-left: 1%;
 }
 #container{
     padding: 3%;
@@ -20,4 +23,11 @@
     color: green;
     margin: 0 0 0 3%;
     padding: 0;
+}
+#input-data, .input-textarea{
+    width: 100%;
+}
+.result-area{
+    min-height: 34px;
+    height: auto;
 }

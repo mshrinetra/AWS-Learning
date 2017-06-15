@@ -22,17 +22,7 @@
         </div>
     </div>
     <?php
-        $noLink = "ajaxTempalate.php";
-        $newDynamoDbLink = "createNewDynamoDb.php";
-        // $isDynamoDb = False;
-        // $dynamoDbLable = "";
-        // if($isDynamoDb)
-        // {
-        //     $dynamoDbLable = "Database Exists! Name: myDynamoDb";
-        //     $newDynamoDbLink = "#";
-        // }
-
-        $addDataLink = "addDataToDynamoDb.php"
+        
     ?>
     <div id="container">
         <div class="panel panel-default">
@@ -40,11 +30,31 @@
                 <h3 class="panel-title"><b>Select an option</b></h3>
             </div>
             <div class="panel-body">
-                <div class="list-group">
-                    <a href="<?php echo $newDynamoDbLink ?>" class="list-group-item">Create New Dynamo DB Database and Tables<span class="link-lable"><?php echo $dynamoDbLable ?></span></a>
-                    <a href="<?php echo $addDataLink ?>" class="list-group-item">Insert records to Dynamo DB Tables<span class="link-lable"></span></a>
-                    <a href="<?php echo $noLink ?>" class="list-group-item">Porta ac consectetur ac<span class="link-lable"></span></a>
-                    <a href="<?php echo $noLink ?>" class="list-group-item">Vestibulum at eros<span class="link-lable"></span></a>
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h2 class="panel-title"><b>Please Enter</b></h2>
+                    </div>
+                    <div class="panel-body">
+                        <form class="navbar-form" id="input-form" action="processData.php" method="post">
+                            <div>
+                                <textarea class="form-control input-textarea"  id="input-data" name="input-data" rows="5"></textarea>
+                            </div>
+                            <button type="button" class="btn btn-danger navbar-btn" id="clearBtn">Clear All</button>
+                            <button type="button" class="btn btn-primary navbar-btn" id="submit" name="submit">SUBMIT</button>
+                            <button type="button" class="btn btn-info navbar-btn" id="reTryBtn" disabled>RE-TRY</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h2 class="panel-title"><b>Action Result</b></h2>
+                    </div>
+                    <div class="panel-body">
+                        <div id="action-result" class="form-control result-area">
+                            
+                        </div>
+                        <a class="btn btn-success navbar-btn" href="index.php" role="button">OK</a>
+                    </div>
                 </div>
             </div>
         </div>
