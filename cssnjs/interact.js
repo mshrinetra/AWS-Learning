@@ -7,27 +7,30 @@ $(function(){
         }
     });
 
+    $(".input-text").css("width","");
+    $(".input-text").css("width","100%");
     $("#reTryBtn").on("click",function(){
-        $("#input-data").removeAttr("disabled");
+        $(".input-text").removeAttr("disabled");
         $("#clearBtn").removeAttr("disabled");
-        $("#submit").removeAttr("disabled");
+        $(".btn-todo").removeAttr("disabled");
         $("#reTryBtn").attr("disabled","true");
     });
 
      $("#clearBtn").on("click",function(){
-        $("#input-data").val("");
+        $(".input-text").val("");
      });
 
-    $("#submit").on("click",function(){
+    $(".btn-todo").on("click",function(){
+        $("#todo").val($(this).attr("name"));
         $.ajax({
             type: "POST",
             url: $("#input-form").attr("action"),
-            data: $("#input-form").serialize(),
+            data: $("#input-form").serializeArray(),
             success: function (data) {
                 $("#reTryBtn").removeAttr("disabled");
-                $("#input-data").attr("disabled","true");
+                $(".input-text").attr("disabled","true");
                 $("#clearBtn").attr("disabled","true");
-                $("#submit").attr("disabled","true");
+                $(".btn-todo").attr("disabled","true");
                 if(data){
                     $("#action-result").html(data);
                 }else{

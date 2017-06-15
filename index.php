@@ -41,10 +41,10 @@
             </div>
             <div class="panel-body">
                 <div class="list-group">
-                    <a href="<?php echo $newDynamoDbLink ?>" class="list-group-item">Create New Dynamo DB Database and Tables<span class="link-lable"><?php echo $dynamoDbLable ?></span></a>
-                    <a href="<?php echo $addDataLink ?>" class="list-group-item">Insert records to Dynamo DB Tables<span class="link-lable"></span></a>
-                    <a href="<?php echo $noLink ?>" class="list-group-item">Porta ac consectetur ac<span class="link-lable"></span></a>
-                    <a href="<?php echo $noLink ?>" class="list-group-item">Vestibulum at eros<span class="link-lable"></span></a>
+                    <a href="<?php echo $newDynamoDbLink ?>" class="list-group-item">Create New Dynamo DB Database and Tables</a>
+                    <a href="<?php echo $addDataLink ?>" class="list-group-item">Insert records to Dynamo DB Tables</a>
+                    <a href="awssqs.php" class="list-group-item">Work with SQS</a>
+                    <a href="<?php echo $noLink ?>" class="list-group-item">Vestibulum at eros</a>
                 </div>
             </div>
         </div>

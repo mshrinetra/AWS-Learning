@@ -27,7 +27,7 @@
     <div id="container">
         <div class="panel panel-default">
             <div class="panel-heading">
-                <h3 class="panel-title"><b>Select an option</b></h3>
+                <h3 class="panel-title"><b>Simple Queue Service</b></h3>
             </div>
             <div class="panel-body">
                 <div class="panel panel-default">
@@ -35,19 +35,17 @@
                         <h2 class="panel-title"><b>Please Enter</b></h2>
                     </div>
                     <div class="panel-body">
-                        <form class="navbar-form" id="input-form" action="processData.php" method="post">
+                        <form class="navbar-form" id="input-form" action="processsqs.php" method="post">
                             <div>
                                 <input type="text" name="todo" id="todo">
-                                <input type="text" name="firstInput" class="form-control input-text" placeholder="firstInput">
-                                <input type="text" name="secondInput" class="form-control input-text" placeholder="secondInput">
-                                <textarea rows="5" name="thirdInput" class="form-control input-text"  placeholder="thirdInput" ></textarea>
-                                <input type="text" name="fourthInput" class="form-control input-text" placeholder="fourthInput">
-                                <input type="text" name="fifthInput" class="form-control input-text" placeholder="fifthInput">
+                                <input type="text" name="queueName" class="form-control input-text" placeholder="Queue Name">
+                                <input type="text" name="queueURL" class="form-control input-text" placeholder="Queue URL">
+                                <textarea rows="5" name="qMsg" class="form-control input-text"  placeholder="Message for Queue" ></textarea>
                             </div>
                             <button type="button" class="btn btn-danger navbar-btn" id="clearBtn">Clear All</button>
-                            <button type="button" class="btn btn-primary navbar-btn btn-todo" name="todoOne">To Do One</button>
-                            <button type="button" class="btn btn-primary navbar-btn btn-todo" name="todoTwo">To Do Two</button>
-                            <button type="button" class="btn btn-primary navbar-btn btn-todo" name="todoTre">To Do Tre</button>
+                            <button type="button" class="btn btn-primary navbar-btn btn-todo" name="create">Create Queue</button>
+                            <button type="button" class="btn btn-primary navbar-btn btn-todo" name="send">Send Msg to Queue</button>
+                            <button type="button" class="btn btn-primary navbar-btn btn-todo" name="read">Read from Queue</button>
                             <button type="button" class="btn btn-info navbar-btn" id="reTryBtn" disabled>RE-TRY</button>
                         </form>
                     </div>
