@@ -32,7 +32,7 @@
                     ini_set('display_startup_errors',1);
                     error_reporting(-1);
 
-                    require '/var/www/html/vendor/autoload.php';
+                    require 'vendor/autoload.php';
                     use Aws\DynamoDb\DynamoDbClient;
 
                     $client = DynamoDbClient::factory(array(

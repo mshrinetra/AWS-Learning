@@ -36,11 +36,10 @@ $(function(){
                 }else{
                     alert("NO DATA!! EMPTY RESPONSE!!!");
                 }
-                
-                
             },
-            error:function (data){
-                alert("ERRR !!!\nSERVER RESPOSE:\ndata");
+            error:function(error){
+                var r = jQuery.parseJSON(error.responseText);
+                alert("ERROR!!!\nMessage: " + r.Message + "\nStackTrace: " + r.StackTrace + "\nExceptionType: " + r.ExceptionType);
             }
         });
             
