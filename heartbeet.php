@@ -1,5 +1,12 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AWS WebServer</title>
+<body>
+<div style="text-align:center; color:green;">
 <?php
-echo "<h1>Hi I'm Fine.</h1> <br/>";
-echo "<h2><a href=\"index.php\">Back Home</a></h2><br/>";
-echo "<h3><a href=\"phpinfo.php\">Get Info</a></h3>";
+echo "<h3>Hi I'm Fine.</h3>";
+echo "<h4><a href=\"index.php\">Home</a>*I'm WebServer*<a href=\"phpinfo.php\">Info</a></h4>";
 ?>
+</div>
+</body>
